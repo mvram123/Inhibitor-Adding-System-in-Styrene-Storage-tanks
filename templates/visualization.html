@@ -1,0 +1,159 @@
+<doctype! html>
+<html>
+
+<head>
+<title> INHIBITORS SENSORS DATA VISUALIZATIONS </title>
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+<style>
+  html{
+    background: no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -0-background-size: cover;
+    background-size: cover;
+  }
+  body{
+    color :#ffffff;
+  }
+</style>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      var temperature = {{ temperature|safe }}
+      google.charts.load("current", {'packages':["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(temperature);
+
+        var options = {
+          title: 'TEMPERATURE (FOR LAST 30 DAYS)',
+            legend: { position: 'bottom'},
+          series: {
+            0: { color: '#ff1414' }
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        chart.draw(data, options);
+      }
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      var inhibitor_level = {{ inhibitor_level|safe }}
+      google.charts.load("current", {'packages':["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(inhibitor_level);
+
+        var options = {
+          title: 'INHIBITOR LEVELS (FOR LAST 30 DAYS)',
+          legend: { position: 'bottom' },
+          series: {
+            0: { color: '#456aff' }
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('inhibitor_curve_chart'));
+        chart.draw(data, options);
+      }
+
+    </script>
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+     var temp_change = {{ temp_change|safe }}
+      google.charts.load("current", {'packages':["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(temp_change);
+
+        var options = {
+          title: 'TEMPERATURE CHANGE (FOR LAST 30 DAYS)',
+          legend: { position: 'bottom' },
+          series: {
+            0: { color: '#22e600' }
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('TEMPCHANGE_curve_chart'));
+        chart.draw(data, options);
+      }
+    </script> 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      var diss_oxygen = {{ diss_oxygen|safe }}
+      google.charts.load("current", {'packages':["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(diss_oxygen);
+
+        var options = {
+          title: 'DISSOLVED OXYGEN (FOR LAST 30 DAYS)',
+          legend: { position: 'bottom' },
+          series: {
+            0: { color: '#b700ff' }
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('DISOXY_curve_chart'));
+        chart.draw(data, options);
+      }
+    </script> 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      var styrene_level = {{ styrene_level|safe }}
+      google.charts.load("current", {'packages':["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(styrene_level);
+
+        var options = {
+          title: 'STYRENE LEVEL (FOR LAST 30 DAYS)',
+          legend: { position: 'bottom' },
+          series: {
+            0: { color: '#ff9d14' }
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('STYRELE_curve_chart'));
+        chart.draw(data, options);
+      }
+    </script>     
+    <div class="container">
+      <h1 style="font-family:'Raleway';color: white;margin-top:25px;margin-left: 400;">Inhibitor Sensors Data Visualizations</h1>
+      <button style="
+       text-align: center;
+       color: white;
+       background-color: tomato;
+       border-color: tomato;
+       margin-left: 1250px;
+       margin-top: -53px;
+       width: 90px;
+       height: 35px;
+       cursor:pointer;
+       font-size: 16px;
+       border-radius: 6px;
+       font-family: 'Raleway';
+       " type="button"><a href="/" style="text-decoration:none; color:white;">Go Back</a></button>
+    </div>
+</head>
+<body background="{{url_for('static', filename='images/iot.jpg')}}">
+  
+      <tr>
+        <td><div id="curve_chart" style="width: 100%; height: 500px;"></div></td>
+        <td><div id="inhibitor_curve_chart" style="width: 100%; height: 500px;"></div></td>
+        <td><div id="TEMPCHANGE_curve_chart" style="width: 100%; height: 500px;"></div></td>
+        <td><div id="DISOXY_curve_chart" style="width: 100%; height: 500px;"></div></td>
+        <td><div id="STYRELE_curve_chart" style="width: 100%; height: 500px;"></div></td>
+      </tr>
+  
+  </body>
+
+
+</html>

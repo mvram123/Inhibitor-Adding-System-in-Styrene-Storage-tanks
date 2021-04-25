@@ -5,12 +5,12 @@ from flask_sqlalchemy import SQLAlchemy
 
 # Connecting to S3 Bucket
 s3 = boto3.resource(service_name='s3', region_name='us-east-1',
-                    aws_access_key_id='AKIAXMJLKRLJ6UNUYJKP',
-                    aws_secret_access_key='4owFwfFAGNOAaXJ/QGHFZIE+abKhAYSpYQVT1vjJ')
+                    aws_access_key_id='YOUR ACCESS KEY',
+                    aws_secret_access_key='YOUR SECRET ACCESS KEY')
 
 # Downloading csv with filename downloaded.csv
-# s3.Bucket('iotlab2021').download_file(Filename='manual.db',Key='manual.db')
-# s3.Bucket('iotlab2021').download_file(Filename='sensor.db',Key='sensor.db')
+s3.Bucket('iotlab2021').download_file(Filename='manual.db',Key='manual.db')
+s3.Bucket('iotlab2021').download_file(Filename='sensor.db',Key='sensor.db')
 
 app = Flask(__name__)
 

@@ -16,7 +16,7 @@ One of the recent industrial hazards happened in India at  LG polymer chemical p
 ## Similar Industrial Hazards 
 
 ![alt text](https://github.com/mvram123/Inhibitor-Adding-System-in-Styrene-Storage-tanks/blob/main/readme_resources/TOI%20Image1.png)
-![alt text](https://github.com/mvram123/Inhibitor-Adding-System-in-Styrene-Storage-tanks/blob/main/readme_resources/TOI%20image2.png)
+![alt text](https://github.com/mvram123/Inhibitor-Adding-System-in-Styrene-Storage-tanks/blob/main/readme_resources/TOI%20Image2.png)
 
 
 ## Objective Of Our Project

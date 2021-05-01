@@ -49,7 +49,7 @@ By monitoring the temperature rise in the tank and the inhibitor content of the 
 ![alt text](https://www.cdata.com/ui/img/logo-amazons3.png)
 ![alt text](https://aws1.discourse-cdn.com/sitepoint/original/3X/b/5/b59a78e2ed76c705f3c0dcb300f3f222aefdcd99.png)
 
-## Where People Should Evacuate ?
+## When People Should Evacuate ?
 
 - When the temperature of styrene storage tank is beyond **65°C**.
 - When there is a temperature rise greater than **2 or 3 °C** per day.

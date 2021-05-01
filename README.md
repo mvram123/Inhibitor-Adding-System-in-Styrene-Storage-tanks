@@ -7,10 +7,17 @@
 
 Due to human negligence and many other reasons, many  industrial mishaps are happening across the globe in recent years. One of the main reasons for mishaps are due  to polymerisation reactions, which is an exothermic  reaction. Due to this exothermic nature, lots of heat will release during reaction, this heat leads to many thermal runaways hazards.
 
+![alt text](https://github.com/mvram123/Inhibitor-Adding-System-in-Styrene-Storage-tanks/blob/main/readme_resources/Thermal-Runaway.jpeg)
 
 Thermal runaway occurs in situations where an  increase in temperature changes the conditions in a way  that causes a further increase in temperature, often leading to a destructive result. It is a kind of  uncontrolled positive feedback.
 
 One of the recent industrial hazards happened in India at  LG polymer chemical plant which is located in Visakhapatnam at Andhra Pradesh.
+
+## Similar Industrial Hazards 
+
+![alt text](https://github.com/mvram123/Inhibitor-Adding-System-in-Styrene-Storage-tanks/blob/main/readme_resources/TOI%20Image1.png)
+<!--![alt text](https://static.toiimg.com/photo/imgsize-293823,msid-75598235/75598235.jpg)-->
+
 
 ## Objective Of Our Project
 
